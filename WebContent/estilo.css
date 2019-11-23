@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: white;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      border-bottom: 2px solid black; 
+      
+}
+
+  .headertekst {
+      text-align: center;
+      width:100%
+    }
+
+.navba2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  top: 0;  
+}
+
+.navbar img {
+  float: left;
+}
+  
+  
+  .column {
+    float: left;
+    padding: 5px;
+    height: 1000px; 
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 20%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 80%;
+    height: 100%;
+    border-left: 2px solid black;
+  }
+
+  .div.up {
+    width: 100%;
+    height: 15.65%;
+  }
+
+  .div.middle {
+    background: #fdfdfd;
+    width: 100%;
+    height: 20%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+
+    .navbar img {
+      display: none;
+    }
+  }
+
+  .menu2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .div.up img:hover:not(.active) {
+   -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+  #IMG {
+    box-shadow: 1px 5px 5px black;
+  }
+
+  #IMG2{
+    width: 4.5%;
+    height: 4.5%;
+    align-items: "center";
+  }
+
+  .post1::before {
+    content: '';
+    background: url(pics/usuario.png);
+    background-size: 50px 50px;
+    float: left;
+    
+    width: 50px;
+    height: 50px;
+  }
+
+  .post2::before {
+    content: '';
+    background: url(pics/history.png);
+    background-size: 50px 50px;
+    float: left;
+    
+    width: 50px;
+    height: 50px;
+  }
+
+  .post3::before {
+    content: '';
+    background: url(pics/nettflixlogo.png);
+    background-size: 60px 50px;
+    float: left;
+    
+    width: 60px;
+    height: 50px;
+  }
