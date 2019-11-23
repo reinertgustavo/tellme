@@ -17,6 +17,16 @@
         border: 1px solid #ccc;
         box-sizing: border-box;
       }
+      
+        input[type=submit] {
+            background-color: #BDDDF4;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }      
 
       button {
         background-color: #BDDDF4;
@@ -91,9 +101,9 @@
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
-        <label><a href="cadastro.html"><br /><br />Não é cadastrado?</a></label>
+        <label><a href="novo-contato.html"><br /><br />Não é cadastrado?</a></label>
     <c:if test="${not empty mensagem}">
-      <div>Top</div><div>Top</div>
+      <div></div>
       <div>${mensagem}</div>
     </c:if>
       </div>
