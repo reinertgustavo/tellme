@@ -93,7 +93,7 @@
         </label>
         <label><a href="cadastro.html"><br /><br />Não é cadastrado?</a></label>
     <c:if test="${not empty mensagem}">
-      <div><div></div></div>
+      <div>Top</div><div>Top</div>
       <div>${mensagem}</div>
     </c:if>
       </div>
