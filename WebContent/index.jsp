@@ -1,11 +1,35 @@
-  <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <head>
         <title>CSS Template</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="estilo.css" >
+	    <link rel="stylesheet" href="estilo.css" >
         <link rel="stylesheet" href="li.css" >
+      <style>
+      	input[type=text] {
+       		width: 100%;
+       		  height: 100px;
+      
+        	padding: 12px 20px;
+        	margin: 8px 0;
+        	display: inline-block;
+        	border: 1px solid #ccc;
+        	box-sizing: border-box;
+      }
+      
+        input[type=submit] {
+            background-color: #BDDDF4;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+      </style>
     </head>
     <body>
      <div class="navbar">
@@ -33,8 +57,8 @@
             </div>
            
             <div class="menu2" >
-              <li4><a href="#home"><img src="pics/music.png" style="width: 6%" alt="Music">   Musicas</a></li4>
-              <li4><a href="#home"><img src="pics/series.png" style="width: 6%" alt="Serie">  Series</a></li4>
+              <li4><a href="#home"><img src="pics/music.png" style="width: 6%" alt="Music">   Músicas</a></li4>
+              <li4><a href="#home"><img src="pics/series.png" style="width: 6%" alt="Serie">  Séries</a></li4>
               <li4><a href="#home"><img src="pics/filmes.png" style="width: 6%" alt="Filme">  Filmes</a></li4>
                 <div class="separador"></div>
                 <h4><img src="pics/favoritos.png" style="width: 7%" alt="Fav">  Favoritos</h4>
@@ -54,11 +78,21 @@
         <div class="column middle" style="background-color: whitesmoke;">
             <p>
               <h3>Publicar</h3>
-              <textarea name="comentário" rows="5" cols="140" placeholder="Digite aqui..."></textarea>
-                <a href="#home"><img src="pics/seta.png" style="width: 4%" alt="Seta"></a>
-                
-            </p>
-            <!--Post 1-->
+			<form action="/desenv-web/novo-comentario" method="POST">
+					<input type="text" placeholder="Digite um comentário" name="comentario"><br>
+					<input type="submit" value="Confirmar">
+			</form>
+			
+		<p>
+		<c:forEach items="${comentarios}" var="comentario">
+		<tr>
+            <td>${comentario.nome}</td>
+            <td>${comentario.comentario}</td>
+		</tr>
+		</c:forEach>
+		</p>
+         
+			<!--Post 1-->
             <p><!--img id="IMG2" src="pics/usuario.png" -->  
               <h3 class="post1"> Nome Sobrenome </h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum arcu, scelerisque nec turpis vel, interdum varius diam. Praesent nec dictum nibh. Curabitur condimentum est a varius ultricies. Vivamus eget lorem eget mauris commodo tincidunt. Donec a tincidunt massa. In hac habitasse platea dictumst. Ut viverra massa mauris. Nulla dapibus consequat porta. Suspendisse mollis eros erat, id posuere nisl elementum vitae. Praesent in tortor vel quam molestie pellentesque ac molestie justo. Nullam a elementum velit.

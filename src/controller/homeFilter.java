@@ -25,7 +25,7 @@ public class homeFilter implements Filter {
 			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 			rd.forward(req, res);
 		} else {
-			RequestDispatcher rd = request.getRequestDispatcher("index.html");
+			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			rd.forward(req, res);
 		}
 	}

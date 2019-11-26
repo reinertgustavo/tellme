@@ -139,3 +139,12 @@
     width: 60px;
     height: 50px;
   }
+    .post4::before {
+    content: '';
+    background: url(pics/nettflixlogo.png);
+    background-size: 60px 50px;
+    float: left;
+    
+    width: 60px;
+    height: 50px;
+  }
