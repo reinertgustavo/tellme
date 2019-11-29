@@ -22,6 +22,8 @@
 			<td>${contato.nome}</td>
 			<td>${contato.email}</td>
 			<td>${contato.getDescricaoPais()}</td>
+			<td><a href="excluir-contato?id=${contato.id}">Excluir</a>
+			<a href="alterar-contato?id=${contato.id}">Alterar</a></td>
 		</tr>
 		</c:forEach>
 	</table>

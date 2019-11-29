@@ -16,7 +16,7 @@ import model.ComentarioRepository;
 public class NovoComentarioServlet extends HttpServlet {
 		
 	protected void doPost(HttpServletRequest req, 
-			HttpServletResponse resp) throws ServletException, IOException {
+		HttpServletResponse resp) throws ServletException, IOException {
 		
 		String nome = "<h3 class=\"post4\">Vinícius Solar</h3>";
 		String postagem = req.getParameter("comentario");
@@ -25,7 +25,6 @@ public class NovoComentarioServlet extends HttpServlet {
 		comentario.setComentario(postagem);
 		comentario.setNome(nome);
 
-		
 		ComentarioRepository cRepositorio = new ComentarioRepository();
 		cRepositorio.salva(comentario);
 		

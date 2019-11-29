@@ -22,15 +22,27 @@ public class ValidaLoginServlet extends HttpServlet {
 		String name = req.getParameter("name");
 		String password = req.getParameter("password");
 		
-		if (name != null 
+		if (	name != null 
 				&& password != null 
-				&& name.equals("vinicius")  
-				&& password.equals("vinicius123")) {
+				&& name.equals("vinicius@gmail.com")  
+				&& password.equals("vinicius123")
+			) {
 			HttpSession session = req.getSession();
 			
 			session.setAttribute("login", name);
 			resp.sendRedirect("index.jsp");
-		} else {
+		} 
+		else if (name != null 
+				&& password != null 
+				&& name.equals("admin")  
+				&& password.equals("admin")
+			) {
+			HttpSession session = req.getSession();
+			
+			session.setAttribute("login", name);
+			resp.sendRedirect("index.jsp");
+		}
+		else {
 			req.setAttribute("mensagem", "Usuario ou senha inválidos.");
 			
 			RequestDispatcher rd = req.getRequestDispatcher("login.jsp");

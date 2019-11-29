@@ -6,17 +6,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Lista comentarios</title>
+		<title>Lista Comentario</title>
 	</head>
 	<body>
-		<h1>Lista comentarios</h1>
+		<h1>Lista Comentario</h1>
 
 	<table>
 		<tr>
+			<th>Nome</th>
 			<th>Comentario</th>
 		</tr>
-		<c:forEach items="${comentarios}" var="comentario">
+		<c:forEach items="${comentarios}" var="comentarios">
 		<tr>
+			<td>${comentario.nome}</td>
 			<td>${comentario.comentario}</td>
 		</tr>
 		</c:forEach>
