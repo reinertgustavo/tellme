@@ -86,7 +86,7 @@
     </div> 
 
     <form action="${linkLogin}" method="GET">
-      <div>Top</div><div>Top</div>
+      <div>Ignore that</div><div>Ignore that</div>
       <div class="imgcontainer">
         <img src="pics/tellme.png" alt="Avatar"  class="avatar">
      </div>
