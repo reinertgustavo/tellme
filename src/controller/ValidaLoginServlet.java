@@ -40,7 +40,7 @@ public class ValidaLoginServlet extends HttpServlet {
 			HttpSession session = req.getSession();
 			
 			session.setAttribute("login", name);
-			resp.sendRedirect("index.jsp");
+			resp.sendRedirect("adm.jsp");
 		}
 		else {
 			req.setAttribute("mensagem", "Usuario ou senha inválidos.");

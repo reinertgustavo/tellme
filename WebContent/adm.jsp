@@ -15,6 +15,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Lista Usuários</a></li>
         <li style="float:right"><a class="active" href="/desenv-web/invalidate-session">Logout</a></li>
     </div> 
     <div class="row" >
@@ -39,7 +40,28 @@
         </div>
 
         <div class="column middle" style="background-color: whitesmoke;">
-           Conteudo
+			<p> 
+           		<h3 class="post10"> Curtidas </h3>
+                <a><img id="IMG40" src="pics/curtidas.png" style="width: 100% height: 100%">
+           	</p>
+            <div class="separador2"></div>
+            <!--Post 2-->
+            <div class="separador2"></div>
+            <p>
+                <h3 class="post3"> Top Netflix </h3>
+                <ul>
+                  <br> <li>"The Office"</li>
+                  <br><li>"Friends"</li>
+                  <br><li>"Grey’s Anatomy"</li> 
+                  <br> <li>"NCIS"</li>
+                  <br> <li>"Criminal Minds"</li>
+                  <br> <li>"Shameless"</li>
+                  <br><li>"Orange is the New Black"</li> 
+                  <br> <li>"Supernatural'</li>
+                  <br><li>"Parks and Recreation"</li>
+                  <br><li>"Ozark"</li>
+                </ul> 
+            </p>
       </div>
       <footer style="background: #bbb"><center>Deloped by Zika Inc.</center></footer>
     </body>
