@@ -29,7 +29,7 @@ public class ExcluirContatoServlet extends HttpServlet {
 			
 		req.setAttribute("contatos",lista);
 		
-		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos");
 		rd.forward(req, resp);
 	}
 }

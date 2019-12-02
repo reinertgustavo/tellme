@@ -34,7 +34,7 @@ public class AlterarContatoDeFatoServlet extends HttpServlet {
 		List<Contato> lista = repositorio.getContatos();
 		req.setAttribute("contatos",lista);
 			
-		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("lista-contatos");
 		rd.forward(req, resp);
 	}
 }

@@ -18,7 +18,7 @@ public class NovoComentarioServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, 
 		HttpServletResponse resp) throws ServletException, IOException {
 		
-		String nome = "<h3 class=\"post4\">Vinícius Solar</h3>";
+		String nome = "<h3 class=\"post1\">Vinícius Solar</h3>";
 		String postagem = req.getParameter("comentario");
 		
 		Comentario comentario = new Comentario();

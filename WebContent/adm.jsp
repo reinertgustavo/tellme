@@ -15,7 +15,8 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#contact">Lista Usuários</a></li>
+        <li><a href="/desenv-web/lista-contatos">Lista Usuários</a></li>
+        <li><a href="/desenv-web/novo-contato.html">Cadastrar Usuários</a></li>
         <li style="float:right"><a class="active" href="/desenv-web/invalidate-session">Logout</a></li>
     </div> 
     <div class="row" >
@@ -63,6 +64,5 @@
                 </ul> 
             </p>
       </div>
-      <footer style="background: #bbb"><center>Deloped by Zika Inc.</center></footer>
     </body>
 </html>
