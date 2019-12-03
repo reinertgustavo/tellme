@@ -91,7 +91,7 @@
         <img src="pics/tellme.png" alt="Avatar"  class="avatar">
      </div>
       <div class="container">
-        <label><b>Login</b></label>
+        <label><b>E-mail</b></label>
         <input type="text" placeholder="Enter Username" name="name">
 
         <label><b>Senha</b></label>

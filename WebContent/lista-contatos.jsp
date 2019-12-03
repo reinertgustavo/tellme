@@ -10,6 +10,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="estilo.css" >
         <link rel="stylesheet" href="li.css" >
+        <style>
+			table, td, th {  
+			  border: 1px solid #ddd;
+			  text-align: left;
+			}
+			
+			table {
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+			
+			th, td {
+			  padding: 15px;
+			}
+		</style>
     </head>
     <body>
      <div class="navbar">
@@ -18,7 +33,7 @@
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="/desenv-web/lista-contatos">Lista Usuários</a></li>
-       	<li><a href="/desenv-web/novo-contato.html">Cadastrar Usuários</a></li>
+       	<li><a href="/desenv-web/novo-contato.jsp">Cadastrar Usuários</a></li>
         <li style="float:right"><a class="active" href="/desenv-web/invalidate-session">Logout</a></li>
     </div> 
     <div class="row" >
@@ -44,22 +59,30 @@
 
         <div class="column middle" style="background-color: whitesmoke;">
 	
-	<table>
-		<tr>
-			<th>Nome</th>
-			<th>E-mail</th>
-			<th>País</th>
-		</tr>
-		<c:forEach items="${contatos}" var="contato">
-		<tr>
-			<td>${contato.nome}</td>
-			<td>${contato.email}</td>
-			<td>${contato.getDescricaoPais()}</td>
-			<td><a href="excluir-contato?id=${contato.id}">Excluir</a>
-			<a href="alterar-contato?id=${contato.id}">Alterar</a></td>
-		</tr>
-		</c:forEach>
-	</table>
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>E-mail</th>
+				<th>País</th>
+			</tr>
+			<c:forEach items="${contatos}" var="contato">
+			<tr>
+				<td>${contato.nome}</td>
+				<td>${contato.email}</td>
+				<td>${contato.getDescricaoPais()}</td>
+				<td>
+				
+				<button>
+					<a href="excluir-contato?id=${contato.id}">Excluir</a>
+				</button>
+				<button>
+					<a href="alterar-contato?id=${contato.id}">Alterar</a>
+				</button>
+				
+				</td>
+			</tr>
+			</c:forEach>
+		</table>
 	
       </div>
     </body>

@@ -16,7 +16,7 @@
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="/desenv-web/lista-contatos">Lista Usuários</a></li>
-        <li><a href="/desenv-web/novo-contato.html">Cadastrar Usuários</a></li>
+        <li><a href="/desenv-web/novo-contato.jsp">Cadastrar Usuários</a></li>
         <li style="float:right"><a class="active" href="/desenv-web/invalidate-session">Logout</a></li>
     </div> 
     <div class="row" >
